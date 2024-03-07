@@ -42,6 +42,15 @@ body {
 	width: 20px;
 }
 
+.accessibility-facebook {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
 #about {
 	display: flex;
 	background-color: #F6D2B8;
@@ -99,9 +108,15 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #6E710E;
 	border-radius:0 ;
 }
+
+.facebook-link {
+	width:20px;
+	height:20px;
+}
+
 .nav-pills .nav-link {
 	color: #000
 }
@@ -187,7 +202,18 @@ body {
 	z-index: 1;
 }
 
+
+.where-am-i {
+	text-align:center;
+}
+
+#hours {
+	padding-top:60px;
+}
+
 #contact {
+	display:flex;
+	flex-direction: row;
 	margin: auto;
 	background-color: #D8D3A8 ;
 	position: relative;

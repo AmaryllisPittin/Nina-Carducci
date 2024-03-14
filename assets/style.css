@@ -343,6 +343,9 @@ input[type="submit"] {
 @media all and (max-width: 1024px) {
 	#banner {
 		min-height: 500px;
+		width:70%;
+		margin-left:15%;
+		margin-right:15%;
 	}
 }
 

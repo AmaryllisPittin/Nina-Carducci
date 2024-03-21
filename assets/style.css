@@ -77,6 +77,10 @@ html, body {
 }
 
 #banner {
+	display:none;
+}
+
+#banner .active {
 	display: flex;
 	flex-direction: column;
 	align-items: center;

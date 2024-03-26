@@ -12,16 +12,6 @@
 	<meta name="description" content="Photographie Nina Carducci - Potraits - Mariages - Concerts">
 	<meta property="og:profile" content="https://www.facebook.com/profile.php?id=61551904838249" />
 	<meta http-equiv="Cache-Control" content="max-age=604800, public">
-	<!--<style>
-		.banner-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover;
-    object-position: center;
-}
-	</style>-->
 	<title>Nina Carducci Photographie</title>
 </head>
 <body>
@@ -55,13 +45,33 @@
         <i class="fa-solid fa-chevron-right chevron chevron_right"></i>
         <div class="banner__all-img banner-img">
             <picture>
-                <!--<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-mobile.webp" media="(max-width: 768px)" type="image/webp" loading="lazy">-->
-                <!--<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" type="image/webp" loading="lazy">
-				<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" type="image/webp" loading="lazy">
-                <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" type="image/webp" loading="lazy">-->
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-g.webp" loading="lazy">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" loading="lazy">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" loading="lazy">
+
+				<img class="img-carousel" 
+				src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-mobile.webp" 
+				srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-mobileMini.webp 288w,
+						./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-mobile.webp 716w,
+						./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-g.webp 1024w" 
+				sizes="(max-width: 412px) 288px,
+						(max-width: 1024px) 716px, 1024px" 
+				alt="Photographie de mariage - baiser des mariés">
+
+				<img class="img-carousel" 
+				src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-mobile.webp.webp" 
+				srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-mobileMini.webp 288w,
+						./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-mobile.webp 716w,
+						./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp 1024w" 
+				sizes="	(max-width: 412px) 288px,
+						(max-width: 1024px) 716px, 1024px" 
+				alt="Photographie de mariage - baiser des mariés" loading="lazy">
+
+				<img class="img-carousel" 
+     				src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-mobile.webp" 
+     				srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-mobile.webp 288w,
+							./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-mobile.webp 716w,
+             				./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-g.webp 1024w" 
+     				sizes="(max-width: 412px) 288px,
+							(max-width: 1024px) 716px, 1024px" 
+     				alt="Photographie de mariage - baiser des mariés" loading="lazy">
             </picture>
         </div>
         <div class="dots"></div>
@@ -90,7 +100,7 @@
 			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Portrait d'un jeune homme - Photographie d'art"/>
 			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photographie de mariage - couple de mariés main dans la main"/>
 			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Portrait d'une jeune femme - Photographie d'art"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photographie de concert - artiste sur scène interpellant le public"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-g.webp" alt="Photographie de concert - artiste sur scène interpellant le public"/>
 			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photographie - Portrait féminin, professionnelle au bureau"/>
 		</div>
 	</div>
@@ -167,7 +177,7 @@
 				<h3>Mes horaires :</h3>
 				<p>Du Lundi au Vendredi,<br> de 10:00 à 19:00</p>
 			</div>
-			<img src="./assets/images/camera.webp" alt="Photographie - matériel" itemprop="image" />
+			<img src="./assets/images/camera.webp" alt="Photographie - matériel" class="img-camera" itemprop="image" />
 		</div>
 	</div>
 
@@ -189,7 +199,7 @@
 	</div>
 </footer>
 </body>
-<script src="./assets/carousel.js"></script>
+<script src="./assets/carousel.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="./assets/maugallery.min.js"></script>
 <script src="./assets/scripts.js"></script>

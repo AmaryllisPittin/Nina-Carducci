@@ -22,7 +22,6 @@ function changeSlide(index) {
     updateCarouselContent();
 }
 
-// Ajouter des écouteurs d'événements pour les flèches gauche et droite
 chevronRight.addEventListener('click', () => {
     changeSlide((currentIndex + 1) % slides.length);
 });
@@ -31,10 +30,8 @@ chevronLeft.addEventListener('click', () => {
     changeSlide((currentIndex - 1 + slides.length) % slides.length);
 });
 
-// Créer les points
 createDots();
 
-// Mettre à jour le contenu du carousel et les points
 function updateCarouselContent() {
     slides.forEach((slide, index) => {
         slide.classList.toggle('active', index === currentIndex);
@@ -47,5 +44,4 @@ function updateCarouselContent() {
     });
 }
 
-// Initialiser le carousel
 updateCarouselContent();

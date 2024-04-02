@@ -2,8 +2,6 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
@@ -12,6 +10,9 @@
 	<meta name="description" content="Photographie Nina Carducci - Potraits - Mariages - Concerts">
 	<meta property="og:profile" content="https://www.facebook.com/profile.php?id=61551904838249" />
 	<meta http-equiv="Cache-Control" content="max-age=604800, public">
+
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/style.css">
 	<title>Nina Carducci Photographie</title>
 </head>
 <body>
@@ -40,42 +41,94 @@
 	</div>
 </div>
 <header id="header">
-    <div id="banner">
-        <i class="fa-solid fa-chevron-left chevron chevron_left"></i>
-        <i class="fa-solid fa-chevron-right chevron chevron_right"></i>
-        <div class="banner__all-img banner-img">
-            <picture>
-
-				<img class="img-carousel" 
-				src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-mobile.webp" 
-				srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-mobileMini.webp 288w,
-						./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-mobile.webp 716w,
-						./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-g.webp 1024w" 
-				sizes="(max-width: 412px) 288px,
-						(max-width: 1024px) 716px, 1024px" 
-				alt="Photographie de mariage - baiser des mariés">
-
-				<img class="img-carousel" 
-				src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-mobile.webp.webp" 
-				srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-mobileMini.webp 288w,
-						./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-mobile.webp 716w,
-						./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp 1024w" 
-				sizes="	(max-width: 412px) 288px,
-						(max-width: 1024px) 716px, 1024px" 
-				alt="Photographie de mariage - baiser des mariés" loading="lazy">
-
-				<img class="img-carousel" 
-     				src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-mobile.webp" 
-     				srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-mobile.webp 288w,
-							./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-mobile.webp 716w,
-             				./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-g.webp 1024w" 
-     				sizes="(max-width: 412px) 288px,
-							(max-width: 1024px) 716px, 1024px" 
-     				alt="Photographie de mariage - baiser des mariés" loading="lazy">
-            </picture>
-        </div>
-        <div class="dots"></div>
-    </div>
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<picture>
+					<source media="(max-width: 320px)"
+						srcset="./assets/images/slider/slide1/ryoji-iwata-slide1_320.webp">
+					<source media="(max-width: 480px)"
+						srcset="./assets/images/slider/slide1/ryoji-iwata-slide1_480.webp">
+					<source media="(max-width: 576px)"
+						srcset="./assets/images/slider/slide1/ryoji-iwata-slide1_576.webp">
+					<source media="(max-width: 768px)"
+						srcset="./assets/images/slider/slide1/ryoji-iwata-slide1_768.webp">
+					<source media="(max-width: 992px)"
+						srcset="./assets/images/slider/slide1/ryoji-iwata-slide1_992.webp">
+					<source media="(max-width: 1200px)"
+						srcset="./assets/images/slider/slide1/ryoji-iwata-slide1_1200.webp">
+					<source media="(max-width: 1400px)"
+						srcset="./assets/images/slider/slide1/ryoji-iwata-slide1_1400.webp">
+					<source media="(max-width: 1600px)"
+						srcset="./assets/images/slider/slide1/ryoji-iwata-slide1_1600.webp">
+					<img src="./assets/images/slider/slide1/ryoji-iwata-slide1_1920.webp" loading="eager"
+						class="d-block w-100" alt="Photo d'un homme marchant sur un passage piéton">
+				</picture>
+			</div>
+			<div class="carousel-item">
+				<picture>
+					<source media="(max-width: 320px)"
+						srcset="./assets/images/slider/slide2/nicholas-green-slide2_320.webp">
+					<source media="(max-width: 480px)"
+						srcset="./assets/images/slider/slide2/nicholas-green-slide2_480.webp">
+					<source media="(max-width: 576px)"
+						srcset="./assets/images/slider/slide2/nicholas-green-slide2_576.webp">
+					<source media="(max-width: 768px)"
+						srcset="./assets/images/slider/slide2/nicholas-green-slide2_768.webp">
+					<source media="(max-width: 992px)"
+						srcset="./assets/images/slider/slide2/nicholas-green-slide2_992.webp">
+					<source media="(max-width: 1200px)"
+						srcset="./assets/images/slider/slide2/nicholas-green-slide2_1200.webp">
+					<source media="(max-width: 1400px)"
+						srcset="./assets/images/slider/slide2/nicholas-green-slide2_1400.webp">
+					<source media="(max-width: 1600px)"
+						srcset="./assets/images/slider/slide2/nicholas-green-slide2_1600.webp">
+					<img src="./assets/images/slider/slide2/nicholas-green-slide2_1920.webp" loading="eager"
+						class="d-block w-100" alt="Photo d'une foule de personnes">
+				</picture>
+			</div>
+			<div class="carousel-item">
+				<picture>
+					<source media="(max-width: 320px)"
+						srcset="./assets/images/slider/slide3/edward-cisneros-slide3_320.webp">
+					<source media="(max-width: 480px)"
+						srcset="./assets/images/slider/slide3/edward-cisneros-slide3_480.webp">
+					<source media="(max-width: 576px)"
+						srcset="./assets/images/slider/slide3/edward-cisneros-slide3_576.webp">
+					<source media="(max-width: 768px)"
+						srcset="./assets/images/slider/slide3/edward-cisneros-slide3_768.webp">
+					<source media="(max-width: 992px)"
+						srcset="./assets/images/slider/slide3/edward-cisneros-slide3_992.webp">
+					<source media="(max-width: 1200px)"
+						srcset="./assets/images/slider/slide3/edward-cisneros-slide3_1200.webp">
+					<source media="(max-width: 1400px)"
+						srcset="./assets/images/slider/slide3/edward-cisneros-slide3_1400.webp">
+					<source media="(max-width: 1600px)"
+						srcset="./assets/images/slider/slide3/edward-cisneros-slide3_1600.webp">
+					<img src="./assets/images/slider/slide3/edward-cisneros-slide3_1920.webp" loading="eager"
+						class="d-block w-100" alt="Photo d'un couple de mariés en train de s'embrasser">
+				</picture>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+			data-bs-slide="prev">
+			<i class="fa-solid fa-chevron-left"></i>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+			data-bs-slide="next">
+			<i class="fa-solid fa-chevron-right"></i>
+			<span class="visually-hidden">Next</span>
+		</button>
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+		</div>
+	</div>
 </header>
 
 <div id="about">
@@ -100,7 +153,7 @@
 			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Portrait d'un jeune homme - Photographie d'art"/>
 			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photographie de mariage - couple de mariés main dans la main"/>
 			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Portrait d'une jeune femme - Photographie d'art"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-g.webp" alt="Photographie de concert - artiste sur scène interpellant le public"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photographie de concert - artiste sur scène interpellant le public"/>
 			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photographie - Portrait féminin, professionnelle au bureau"/>
 		</div>
 	</div>
@@ -177,7 +230,7 @@
 				<h3>Mes horaires :</h3>
 				<p>Du Lundi au Vendredi,<br> de 10:00 à 19:00</p>
 			</div>
-			<img src="./assets/images/camera.webp" alt="Photographie - matériel" class="img-camera" itemprop="image" />
+			<img src="./assets/images/camera.webp" alt="Photographie - matériel" itemprop="image" />
 		</div>
 	</div>
 
@@ -199,8 +252,8 @@
 	</div>
 </footer>
 </body>
-<script src="./assets/carousel.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./assets/new-carousel.js"></script>
 <script src="./assets/maugallery.min.js"></script>
 <script src="./assets/scripts.js"></script>
 </html>

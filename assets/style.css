@@ -1,16 +1,11 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
+body {
+	max-width: 1920px;
+	margin: auto;
 }
-
 * {
 	font-family: 'Inter';
 	font-style: normal;
-	box-sizing: border-box;
 }
-
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -30,8 +25,7 @@ html, body {
 .nav ul {
 	display: flex;
 	list-style-type: none;
-	font-size: 17px;
-	margin-top:0;
+	font-size: 14px;
 	margin-bottom: 0;
 }
 
@@ -44,96 +38,8 @@ html, body {
 	color: #000
 }
 
-.nav-link-container {
-	display:flex;
-	flex-direction:row;
-	height:36px;
-}
-
-.nav-link-container-list {
-	padding-left:20px;
-}
-
 .social-link img {
-	width: 26px;
-	margin-left:20px;
-	padding-bottom:2px;
-	position:relative;
-	bottom:2px;
-}
-
-.accessibility-facebook {
-	position: absolute;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap;
-}
-
-.fa-brands {
-	font-size:26px;
-	padding-top:2px;
-	position:relative;
-	bottom:4px;
-}
-
-.carousel-inner {
-	position:relative;
-}
-
-#carouselExampleIndicators {
-	position:relative;
-}
-
-button.carousel-control-prev,
-button.carousel-control-next {
-	position: absolute;
-	font-size:70px;
-	top:50%;
-	z-index:2;
-	background-color: transparent;
-	border:none;
-	color:white;
-}
-
-button.carousel-control-prev {
-	left: 25px;
-}
-
-button.carousel-control-next {
-	right: 25px;
-}
-
-span.visually-hidden {
-	display:none;
-}
-
-.carousel-indicators {
-	position: absolute;
-	z-index:2;
-	bottom: 5%;
-	right:45%;
-	display: flex;
-}
-
-.carousel-indicators button.active-dot {
-	background-color: white;
-}
-
-.carousel-indicators button {
-    width:50px;
-	margin-inline:7px;
-	border:solid white 2px;
-	background-color:transparent;
-	height:10px;
-}
-
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    display: inline-block;
-    width: 4rem;
-    height: 4rem;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%;
+	width: 20px;
 }
 
 #about {
@@ -179,6 +85,11 @@ span.visually-hidden {
 	font-style: italic;
 	width: 60%;
 }
+
+#about-me h3 {
+	width: 84%;
+}
+
 #about-me p {
 	width: 80%;
 	font-size: 14px;
@@ -193,12 +104,12 @@ span.visually-hidden {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #6E710E;
+	background-color: #7c752f;
 	border-radius:0 ;
 }
-
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -217,6 +128,7 @@ span.visually-hidden {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+	cursor: pointer;
 }
 .mg-prev, .mg-next {
 	width: 30px;
@@ -229,6 +141,8 @@ span.visually-hidden {
 }
 
 .quote {
+	font-family: 'Spectral';
+	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
@@ -246,10 +160,10 @@ span.visually-hidden {
 }
 
 #services {
+	margin: auto;
 	background-color: #A8D5D8 ;
 	position: relative;
 }
-
 #services .container::before{
 	content: ' ';
 	background-color: #1C6474;
@@ -280,24 +194,30 @@ span.visually-hidden {
 	z-index: 1;
 }
 
-
-.where-am-i {
-	text-align:center;
-}
-
-#hours {
-	padding-top:60px;
-}
-
 #contact {
-	display:flex;
-	flex-direction: row;
 	margin: auto;
 	background-color: #D8D3A8 ;
+	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
+	display:flex;
+	flex-direction:row;
 }
 
+.where-am-i {
+	width:40%;
+	margin-left:5%;
+}
+
+.camera-img {
+	width: 300px;
+	height:300px;
+	margin-top:10px;
+}
+
+#contact .container {
+	display: flex;
+}
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -308,7 +228,10 @@ span.visually-hidden {
 	right: 0;
 	z-index: -1;
 }
+.form-container {
+	flex : 2;
 
+}
 form {
 	display: flex;
 	flex-direction: column;
@@ -338,15 +261,6 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-@media all and (max-width: 1024px) {
-	#banner {
-		min-height: 500px;
-		width:70%;
-		margin-left:15%;
-		margin-right:15%;
-	}
-}
-
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -358,7 +272,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h3, #about-me p {
 		width: 100%;
 	}
 }

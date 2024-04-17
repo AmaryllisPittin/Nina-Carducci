@@ -210,8 +210,8 @@ body {
 }
 
 .camera-img {
-	width: 300px;
-	height:300px;
+	width: 19.5%;
+	height:19.5%;
 	margin-top:10px;
 }
 
@@ -278,6 +278,31 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 1000px) {
+	#contact {
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+	}
+	.camera-img {
+		width:50%;
+		margin-bottom:30px;
+	}
+	.where-am-i {
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		width:60%;
+		margin-left:0;
+		margin-bottom:30px;
+	}
+	.contact-part {
+		width:80%;
+	}
+	.form-container {
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+	}
 	#about{
 		flex-direction: column;
 
@@ -322,6 +347,7 @@ input[type="submit"] {
 
 	#contact .container {
 		flex-direction: column;
+		align-items:center;
 	}
 	#contact .picture.right {
 		margin-top: 1em;
@@ -369,4 +395,19 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
+}
+
+.nav-link-container-list {
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+}
+
+i.fa-facebook {
+	font-size:20px;
+	padding-top:5px;
+}
+
+.accessibility-facebook {
+	display:none;
 }
